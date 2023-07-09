@@ -6,10 +6,11 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { ExtratoComponent } from './pages/extrato/extrato.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'cadastro', component: CadastroComponent },
-  { path: 'extrato', component: ExtratoComponent },
+  { path: 'fintech/home', component: HomeComponent },
+  { path: '', redirectTo: 'fintech/home', pathMatch: 'full' },
+  { path: 'fintech/login', component: LoginComponent },
+  { path: 'fintech/cadastro', component: CadastroComponent },
+  { path: 'fintech/extrato', component: ExtratoComponent },
 ];
 
 @NgModule({
