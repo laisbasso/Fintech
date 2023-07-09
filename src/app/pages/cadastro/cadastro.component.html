@@ -1,0 +1,79 @@
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+      <h3>Seja bem vindo!</h3>
+      <h3>Vamos começar?</h3>
+
+      <mat-card class="nude">
+        <mat-card-content>
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <mat-form-field>
+                <mat-label>Nome completo</mat-label>
+                <input matInput />
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <mat-form-field>
+                <mat-label>Data de nascimento</mat-label>
+                <input matInput [matDatepicker]="picker" />
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <mat-form-field>
+                <mat-label>Gênero</mat-label>
+                <mat-select>
+                  <mat-option value="feminino"> Feminino </mat-option>
+                  <mat-option value="masculino"> Masculino </mat-option>
+                  <mat-option value="outro"> Outro </mat-option>
+                  <mat-option value="pni"> Prefiro não informar </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput />
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <mat-form-field>
+                <mat-label>Senha</mat-label>
+                <input matInput />
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <a routerLink="/login" class="nav-link" href="#">Já possui uma conta?</a>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+<div class="row footer">
+  <div class="col-md-12">
+    <button mat-flat-button class="avocado w-100" (click)="this.router.navigateByUrl('/login')">
+      Criar conta
+    </button>
+  </div>
+</div>

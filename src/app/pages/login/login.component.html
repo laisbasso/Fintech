@@ -1,0 +1,49 @@
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+      <h3>Bem vindo de volta!</h3>
+
+      <mat-card class="nude">
+        <mat-card-content>
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput />
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <mat-form-field>
+                <mat-label>Senha</mat-label>
+                <input matInput />
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <a routerLink="/" class="nav-link" href="#">Esqueci a senha</a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+              <a routerLink="/cadastro" class="nav-link" href="#">Não possui uma conta?</a>
+            </div>
+          </div>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+<div class="row footer">
+  <div class="col-md-12">
+    <button mat-flat-button class="avocado w-100" (click)="this.router.navigateByUrl('/extrato')">Entrar</button>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+body {
+  background-color: #F1EDD9;
+}
+
+mat-card {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 35px !important;
+}
+
+h3 {
+  margin-left: 2rem;
+}
+
+p {
+  color: #404434;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  font-size: 1.2rem;
+}
+
+button{
+  color: #F1EDD9 !important;
+  border-radius: 0;
+  margin-bottom: 0 !important;
+  height: 4rem !important;
+}
+
+.avocado {
+  background-color: #404434 !important;
+}
+
+.avocado-text {
+  color: #404434 !important;
+}
+
+.cream {
+  background-color: #F1EDD9;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  left: 0
+}
+
+.margin-left{
+  margin-left: 2rem;
+}
+
+.nude{
+  background-color: #fcfbf7 !important;
+}
+
+.w-100 {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.w-70 {
+  display: block;
+  margin: 10px 0;
+  width: 70%;
+}
