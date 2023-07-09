@@ -7,7 +7,6 @@ import { ExtratoComponent } from './pages/extrato/extrato.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'cadastro', component: CadastroComponent },
   { path: 'extrato', component: ExtratoComponent },
